@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "voidcrazed",
+	"version": "${version}",
+	"name": "Voidcrazed",
+	"description": "Adds a new Void dimension, complete with new blocks, items, and mobs!",
+	"authors": [
+		"YaBoiiii_XD"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/voidcrazed/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.yaboiiii_xd.voidcrazed.Voidcrazed"
+		],
+		"fabric-datagen": [
+			"net.yaboiiii_xd.voidcrazed.VoidcrazedDataGenerator"
+		],
+		"client": [
+			"net.yaboiiii_xd.voidcrazed.VoidcrazedClient"
+		]
+	},
+	"mixins": [
+		"voidcrazed.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
