@@ -2,6 +2,7 @@ package net.yaboiiii_xd.voidcrazed;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.yaboiiii_xd.voidcrazed.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +13,7 @@ public class Voidcrazed implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
