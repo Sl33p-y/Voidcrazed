@@ -1,7 +1,6 @@
 {
   "item.voidcrazed.raw_darksteel_ore": "Raw Darksteel Ore",
   "item.voidcrazed.darksteel_ingot": "Darksteel Ingot",
-  "item.voidcrazed._______": "______",
-  "item.voidcrazed.______": "______",
-  "item.voidcrazed._____": "______"
+  "block.voidcrazed.darksteel_block": "Block of Darksteel",
+  "block.voidcrazed.raw_darksteel_ore_block": "Block of Raw Darksteel Ore"
 }
