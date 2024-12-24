@@ -17,6 +17,8 @@ public class ModBlockTagProvider  extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                .add(ModBlocks.DARKSTEEL_BLOCK,
-                       ModBlocks.RAW_DARKSTEEL_ORE_BLOCK);
+                       ModBlocks.RAW_DARKSTEEL_ORE_BLOCK,
+                       ModBlocks.DARKSTEEL_ORE,
+                       ModBlocks.VOIDSTONE);
     }
 }

@@ -19,9 +19,6 @@ public class ModItems {
     public static void registerModItems() {
         Voidcrazed.LOGGER.info("Registering items for " + Voidcrazed.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(RAW_DARKSTEEL_ORE);
-            fabricItemGroupEntries.add(DARKSTEEL_INGOT);
-        });
+        };
     }
-}
+

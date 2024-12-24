@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "voidcrazed:darksteel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "voidcrazed:darksteel_ingot"
+  }
+}

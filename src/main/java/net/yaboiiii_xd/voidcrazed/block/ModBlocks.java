@@ -16,10 +16,16 @@ public class ModBlocks {
 
     public static final Block DARKSTEEL_BLOCK = registerBlock("darksteel_block",
             new Block(AbstractBlock.Settings.create()
-                    .strength(9.5f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
+                    .requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(55f)));
     public static final Block RAW_DARKSTEEL_ORE_BLOCK = registerBlock("raw_darksteel_ore_block",
             new Block(AbstractBlock.Settings.create()
-                    .strength(6f).requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
+                    .requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS).hardness(31f)));
+    public static final Block DARKSTEEL_ORE = registerBlock("darksteel_ore",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().hardness(32.5f)));
+    public static final Block VOIDSTONE = registerBlock("voidstone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().hardness(4f)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -34,10 +40,5 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         Voidcrazed.LOGGER.info("Registering Mod Blocks for " + Voidcrazed.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(DARKSTEEL_BLOCK);
-            fabricItemGroupEntries.add(RAW_DARKSTEEL_ORE_BLOCK);
-        });
     }
 }
